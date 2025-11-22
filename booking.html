@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Sân - Golf Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-info">
+                <span><i class="fa-regular fa-clock"></i> 07:00 - 22:00</span>
+                <span><i class="fa-solid fa-phone"></i> 1900 1234</span>
+            </div>
+            <div class="top-bar-social">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <span>Đăng nhập</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="https://www.figma.com/api/mcp/asset/10201de9-b9b3-46f5-8bbd-3597b4d35233" alt="Golf Booking">
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Trang Chủ</a>
+                <a href="course-detail.html" class="nav-link">Sân Golf</a>
+                <a href="#" class="nav-link">Dịch Vụ</a>
+                <a href="#" class="nav-link">Tin Tức</a>
+                <a href="#" class="nav-link">Liên Hệ</a>
+            </nav>
+
+            <div class="header-action">
+                <a href="#" class="btn btn-primary">Đặt Sân Ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Page Content -->
+    <section class="section booking-page-section">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Đặt Sân Golf</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Trang chủ</a> / <a href="course-detail.html">The Bluffs Hồ Tràm</a> / <span>Đặt sân</span>
+                </div>
+            </div>
+
+            <div class="booking-layout">
+                <!-- Booking Form (Left) -->
+                <div class="booking-main">
+                    <!-- Step Indicator -->
+                    <div class="booking-steps">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Thông tin đặt sân</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Thông tin cá nhân</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Thanh toán</div>
+                        </div>
+                    </div>
+
+                    <form class="booking-form">
+                        <div class="form-section">
+                            <h3 class="form-title">Chọn thời gian chơi</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Ngày chơi</label>
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Giờ Tee Time</label>
+                                    <select class="form-control">
+                                        <option>06:00</option>
+                                        <option>06:30</option>
+                                        <option>07:00</option>
+                                        <option>07:30</option>
+                                        <option>08:00</option>
+                                        <option>14:00</option>
+                                        <option>14:30</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Số lượng người chơi</label>
+                                    <div class="player-selector">
+                                        <button type="button" class="player-btn">1</button>
+                                        <button type="button" class="player-btn">2</button>
+                                        <button type="button" class="player-btn">3</button>
+                                        <button type="button" class="player-btn active">4</button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Số hố</label>
+                                    <select class="form-control">
+                                        <option>18 Hố</option>
+                                        <option>27 Hố</option>
+                                        <option>36 Hố</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3 class="form-title">Thông tin liên hệ</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Họ và tên</label>
+                                    <input type="text" class="form-control" placeholder="Nhập họ tên của bạn">
+                                </div>
+                                <div class="form-group">
+                                    <label>Số điện thoại</label>
+                                    <input type="tel" class="form-control" placeholder="Nhập số điện thoại">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Nhập địa chỉ email">
+                            </div>
+                            <div class="form-group">
+                                <label>Ghi chú thêm</label>
+                                <textarea class="form-control" rows="3" placeholder="Yêu cầu đặc biệt (nếu có)"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-primary btn-lg">Xác Nhận Đặt Sân</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Booking Summary (Right) -->
+                <div class="booking-sidebar">
+                    <div class="summary-card">
+                        <h3 class="summary-title">Thông tin đặt chỗ</h3>
+                        
+                        <div class="summary-course">
+                            <img src="course_1.png" alt="Course Thumb">
+                            <div>
+                                <h4>The Bluffs Hồ Tràm</h4>
+                                <span><i class="fa-solid fa-location-dot"></i> Bà Rịa - Vũng Tàu</span>
+                            </div>
+                        </div>
+
+                        <div class="summary-details">
+                            <div class="summary-row">
+                                <span>Ngày chơi</span>
+                                <strong>25/11/2023</strong>
+                            </div>
+                            <div class="summary-row">
+                                <span>Giờ Tee Time</span>
+                                <strong>07:30</strong>
+                            </div>
+                            <div class="summary-row">
+                                <span>Số người</span>
+                                <strong>4 Golfers</strong>
+                            </div>
+                            <div class="summary-row">
+                                <span>Số hố</span>
+                                <strong>18 Hố</strong>
+                            </div>
+                        </div>
+
+                        <div class="summary-price">
+                            <div class="summary-row">
+                                <span>Giá sân (x4)</span>
+                                <span>10.000.000đ</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Phí dịch vụ</span>
+                                <span>200.000đ</span>
+                            </div>
+                            <div class="summary-total">
+                                <span>Tổng cộng</span>
+                                <span class="total-amount">10.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="support-box">
+                        <i class="fa-solid fa-headset"></i>
+                        <div>
+                            <strong>Cần hỗ trợ?</strong>
+                            <p>Gọi ngay 1900 1234 để được tư vấn miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Về Golf Booking</h4>
+                    <p style="color: #999; font-size: 14px; line-height: 1.6;">
+                        Nền tảng đặt sân golf hàng đầu Việt Nam.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liên Kết</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang Chủ</a></li>
+                        <li><a href="course-detail.html">Sân Golf</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Hỗ Trợ</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Điều Khoản</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Liên Hệ</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-location-dot"></i> 48 Cao Thắng, Đà Nẵng</li>
+                        <li><i class="fa-solid fa-phone"></i> 1900 1234</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Golf Booking Vietnam. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
