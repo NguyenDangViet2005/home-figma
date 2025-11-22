@@ -741,6 +741,80 @@ img {
     }
 }
 
+/* ... (Previous styles) ... */
+
+/* Payment Method Styles */
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.payment-method-item {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.payment-method-item:hover {
+    border-color: var(--primary-color);
+    background-color: #f9f9f9;
+}
+
+.payment-method-item.active {
+    border-color: var(--primary-color);
+    background-color: #e8f5e9;
+}
+
+.payment-radio {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+}
+
+.payment-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.payment-info {
+    flex: 1;
+}
+
+.payment-name {
+    font-weight: 600;
+    display: block;
+    color: var(--text-main);
+}
+
+.payment-desc {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+/* Navigation Buttons */
+.btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-back {
+    background-color: #eee;
+    color: #666;
+}
+
+.btn-back:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
 /* =========================================
    Course Detail Page Styles
    ========================================= */

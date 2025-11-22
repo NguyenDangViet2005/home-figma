@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặt Sân - Bước 1: Thông Tin Đặt Sân</title>
+    <title>Đặt Sân - Bước 3: Thanh Toán</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -67,60 +67,61 @@
                             <div class="step-number">1</div>
                             <div class="step-label">Thông tin đặt sân</div>
                         </div>
-                        <div class="step">
+                        <div class="step active">
                             <div class="step-number">2</div>
                             <div class="step-label">Thông tin cá nhân</div>
                         </div>
-                        <div class="step">
+                        <div class="step active">
                             <div class="step-number">3</div>
                             <div class="step-label">Thanh toán</div>
                         </div>
                     </div>
 
-                    <form class="booking-form" action="booking-step-2.html">
+                    <form class="booking-form">
                         <div class="form-section">
-                            <h3 class="form-title">Chọn thời gian chơi</h3>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label>Ngày chơi</label>
-                                    <input type="date" class="form-control" value="2023-11-25">
-                                </div>
-                                <div class="form-group">
-                                    <label>Giờ Tee Time</label>
-                                    <select class="form-control">
-                                        <option>06:00</option>
-                                        <option>06:30</option>
-                                        <option>07:00</option>
-                                        <option selected>07:30</option>
-                                        <option>08:00</option>
-                                        <option>14:00</option>
-                                        <option>14:30</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label>Số lượng người chơi</label>
-                                    <div class="player-selector">
-                                        <button type="button" class="player-btn">1</button>
-                                        <button type="button" class="player-btn">2</button>
-                                        <button type="button" class="player-btn">3</button>
-                                        <button type="button" class="player-btn active">4</button>
+                            <h3 class="form-title">Phương thức thanh toán</h3>
+                            <div class="payment-methods">
+                                <label class="payment-method-item active">
+                                    <input type="radio" name="payment" class="payment-radio" checked>
+                                    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-VNPAY-QR-1.png" alt="VNPAY" class="payment-icon">
+                                    <div class="payment-info">
+                                        <span class="payment-name">VNPAY-QR</span>
+                                        <span class="payment-desc">Thanh toán qua ứng dụng ngân hàng hoặc ví điện tử</span>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Số hố</label>
-                                    <select class="form-control">
-                                        <option>18 Hố</option>
-                                        <option>27 Hố</option>
-                                        <option>36 Hố</option>
-                                    </select>
-                                </div>
+                                </label>
+                                
+                                <label class="payment-method-item">
+                                    <input type="radio" name="payment" class="payment-radio">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" alt="Visa/Mastercard" class="payment-icon" style="width: 50px;">
+                                    <div class="payment-info">
+                                        <span class="payment-name">Thẻ quốc tế (Visa/Mastercard)</span>
+                                        <span class="payment-desc">Thanh toán an toàn qua cổng thanh toán</span>
+                                    </div>
+                                </label>
+
+                                <label class="payment-method-item">
+                                    <input type="radio" name="payment" class="payment-radio">
+                                    <img src="https://play-lh.googleusercontent.com/uCtnppeJ9ENYdJaSL5av-ZL1ZM1f3b35u9k8EOEjK3ZdyG509_2osbXGH5qzXVmoFv0" alt="Momo" class="payment-icon">
+                                    <div class="payment-info">
+                                        <span class="payment-name">Ví MoMo</span>
+                                        <span class="payment-desc">Thanh toán nhanh chóng qua ví MoMo</span>
+                                    </div>
+                                </label>
+
+                                <label class="payment-method-item">
+                                    <input type="radio" name="payment" class="payment-radio">
+                                    <i class="fa-solid fa-money-bill-wave" style="font-size: 24px; color: #4caf50; width: 40px; text-align: center;"></i>
+                                    <div class="payment-info">
+                                        <span class="payment-name">Thanh toán tại sân</span>
+                                        <span class="payment-desc">Đặt cọc trước 30% để giữ chỗ</span>
+                                    </div>
+                                </label>
                             </div>
                         </div>
 
-                        <div class="form-actions">
-                            <a href="booking-step-2.html" class="btn btn-primary btn-lg">Tiếp Tục <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                        <div class="btn-group">
+                            <a href="booking-step-2.html" class="btn btn-back"><i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i> Quay Lại</a>
+                            <button type="button" class="btn btn-primary btn-lg" onclick="alert('Đặt sân thành công! Cảm ơn bạn đã sử dụng dịch vụ.')">Xác Nhận Thanh Toán</button>
                         </div>
                     </form>
                 </div>
