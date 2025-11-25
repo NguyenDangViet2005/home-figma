@@ -70,58 +70,517 @@
                 <div class="course-main">
                     <!-- Tabs -->
                     <div class="course-tabs">
-                        <button class="tab-btn active">Tổng Quan</button>
-                        <button class="tab-btn">Tiện Ích</button>
-                        <button class="tab-btn">Bảng Giá</button>
-                        <button class="tab-btn">Đánh Giá</button>
+                        <button class="tab-btn active" data-tab="overview">Tổng Quan</button>
+                        <button class="tab-btn" data-tab="amenities">Tiện Ích</button>
+                        <button class="tab-btn" data-tab="pricing">Bảng Giá</button>
+                        <button class="tab-btn" data-tab="reviews">Đánh Giá</button>
                     </div>
 
-                    <!-- Description -->
-                    <div class="content-block">
-                        <h2 class="block-title">Giới Thiệu</h2>
-                        <p>The Bluffs Hồ Tràm Strip được thiết kế bởi huyền thoại Greg Norman, là một trong những sân golf ven biển đẹp nhất Việt Nam và thế giới. Với địa hình cồn cát tự nhiên, sân golf mang đến những thách thức thú vị cho mọi golfer.</p>
-                        <p>Sân golf 18 hố này tận dụng tối đa địa hình tự nhiên của khu vực, với những cồn cát cao vút và tầm nhìn hướng biển tuyệt đẹp. Mỗi hố golf đều mang lại một trải nghiệm độc đáo, đòi hỏi người chơi phải tính toán kỹ lưỡng từng cú đánh.</p>
-                    </div>
+                    <!-- Tab Content: Overview -->
+                    <div class="tab-content active" id="overview">
+                        <!-- Description -->
+                        <div class="content-block">
+                            <h2 class="block-title">Giới Thiệu</h2>
+                            <p>The Bluffs Hồ Tràm Strip được thiết kế bởi huyền thoại Greg Norman, là một trong những sân golf ven biển đẹp nhất Việt Nam và thế giới. Với địa hình cồn cát tự nhiên, sân golf mang đến những thách thức thú vị cho mọi golfer.</p>
+                            <p>Sân golf 18 hố này tận dụng tối đa địa hình tự nhiên của khu vực, với những cồn cát cao vút và tầm nhìn hướng biển tuyệt đẹp. Mỗi hố golf đều mang lại một trải nghiệm độc đáo, đòi hỏi người chơi phải tính toán kỹ lưỡng từng cú đánh.</p>
+                        </div>
 
-                    <!-- Gallery -->
-                    <div class="content-block">
-                        <h2 class="block-title">Thư Viện Ảnh</h2>
-                        <div class="gallery-grid">
-                            <img src="course_1.png" alt="Gallery 1">
-                            <img src="course_2.png" alt="Gallery 2">
-                            <img src="course_3.png" alt="Gallery 3">
-                            <img src="https://www.figma.com/api/mcp/asset/0b84f7a2-9434-4cf0-ad8a-4f11077576dc" alt="Gallery 4">
+                        <!-- Gallery -->
+                        <div class="content-block">
+                            <h2 class="block-title">Thư Viện Ảnh</h2>
+                            <div class="gallery-grid">
+                                <img src="course_1.png" alt="Gallery 1">
+                                <img src="course_2.png" alt="Gallery 2">
+                                <img src="course_3.png" alt="Gallery 3">
+                                <img src="https://www.figma.com/api/mcp/asset/0b84f7a2-9434-4cf0-ad8a-4f11077576dc" alt="Gallery 4">
+                            </div>
+                        </div>
+
+                        <!-- Course Info -->
+                        <div class="content-block">
+                            <h2 class="block-title">Thông Tin Sân Golf</h2>
+                            <div class="course-info-grid">
+                                <div class="info-item">
+                                    <i class="fa-solid fa-golf-ball-tee"></i>
+                                    <div>
+                                        <strong>Số hố</strong>
+                                        <span>18 hố Championship</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-solid fa-ruler-combined"></i>
+                                    <div>
+                                        <strong>Độ dài</strong>
+                                        <span>7,000 yards (Par 72)</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-solid fa-user-tie"></i>
+                                    <div>
+                                        <strong>Thiết kế</strong>
+                                        <span>Greg Norman</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                    <div>
+                                        <strong>Khai trương</strong>
+                                        <span>2014</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Amenities -->
-                    <div class="content-block">
-                        <h2 class="block-title">Tiện Ích</h2>
-                        <div class="amenities-grid">
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-utensils"></i>
-                                <span>Nhà hàng 5 sao</span>
+                    <!-- Tab Content: Amenities -->
+                    <div class="tab-content" id="amenities">
+                        <div class="content-block">
+                            <h2 class="block-title">Tiện Ích Cao Cấp</h2>
+                            <p>The Bluffs Hồ Tràm Strip cung cấp đầy đủ các tiện ích đẳng cấp quốc tế, đảm bảo trải nghiệm golf hoàn hảo nhất cho golfer.</p>
+                        </div>
+
+                        <div class="amenities-detailed">
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-utensils"></i>
+                                </div>
+                                <h3>Nhà Hàng & Bar</h3>
+                                <p>Nhà hàng cao cấp phục vụ ẩm thực Á - Âu với view nhìn ra biển tuyệt đẹp. Bar sang trọng với đầy đủ các loại đồ uống cao cấp.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Thực đơn đa dạng</li>
+                                    <li><i class="fa-solid fa-check"></i> Đầu bếp chuyên nghiệp</li>
+                                    <li><i class="fa-solid fa-check"></i> Không gian sang trọng</li>
+                                </ul>
                             </div>
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-shower"></i>
-                                <span>Phòng thay đồ</span>
+
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-shop"></i>
+                                </div>
+                                <h3>Pro Shop</h3>
+                                <p>Cửa hàng chuyên dụng với đầy đủ trang thiết bị golf từ các thương hiệu hàng đầu thế giới như Titleist, Callaway, TaylorMade.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Gậy golf cao cấp</li>
+                                    <li><i class="fa-solid fa-check"></i> Phụ kiện đa dạng</li>
+                                    <li><i class="fa-solid fa-check"></i> Tư vấn chuyên nghiệp</li>
+                                </ul>
                             </div>
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-shop"></i>
-                                <span>Pro Shop</span>
+
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-person-chalkboard"></i>
+                                </div>
+                                <h3>Caddy & Dịch Vụ</h3>
+                                <p>Đội ngũ caddy được đào tạo bài bản, am hiểu sân và nhiệt tình hỗ trợ golfer trong suốt vòng golf.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Caddy chuyên nghiệp</li>
+                                    <li><i class="fa-solid fa-check"></i> Xe golf điện</li>
+                                    <li><i class="fa-solid fa-check"></i> Hỗ trợ 24/7</li>
+                                </ul>
                             </div>
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-car"></i>
-                                <span>Bãi đỗ xe</span>
+
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-shower"></i>
+                                </div>
+                                <h3>Phòng Thay Đồ</h3>
+                                <p>Phòng thay đồ rộng rãi, hiện đại với đầy đủ tiện nghi: tủ khóa cá nhân, phòng tắm, sauna và khu vực thư giãn.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Tủ khóa an toàn</li>
+                                    <li><i class="fa-solid fa-check"></i> Phòng tắm cao cấp</li>
+                                    <li><i class="fa-solid fa-check"></i> Sauna & Steam</li>
+                                </ul>
                             </div>
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-wifi"></i>
-                                <span>Wifi miễn phí</span>
+
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-dumbbell"></i>
+                                </div>
+                                <h3>Khu Tập Luyện</h3>
+                                <p>Driving range rộng 300 yards, putting green và chipping area để golfer luyện tập trước khi ra sân.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Driving range 300 yards</li>
+                                    <li><i class="fa-solid fa-check"></i> Putting green</li>
+                                    <li><i class="fa-solid fa-check"></i> Chipping area</li>
+                                </ul>
                             </div>
-                            <div class="amenity-item">
-                                <i class="fa-solid fa-person-chalkboard"></i>
-                                <span>Caddy chuyên nghiệp</span>
+
+                            <div class="amenity-card">
+                                <div class="amenity-icon">
+                                    <i class="fa-solid fa-car"></i>
+                                </div>
+                                <h3>Bãi Đỗ Xe & Vận Chuyển</h3>
+                                <p>Bãi đỗ xe rộng rãi, an ninh 24/7. Dịch vụ đưa đón từ sân bay và các khu resort lân cận.</p>
+                                <ul class="amenity-features">
+                                    <li><i class="fa-solid fa-check"></i> Bãi đỗ xe miễn phí</li>
+                                    <li><i class="fa-solid fa-check"></i> An ninh 24/7</li>
+                                    <li><i class="fa-solid fa-check"></i> Dịch vụ đưa đón</li>
+                                </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Pricing -->
+                    <div class="tab-content" id="pricing">
+                        <div class="content-block">
+                            <h2 class="block-title">Bảng Giá Dịch Vụ</h2>
+                            <p>Giá cả minh bạch, cạnh tranh với nhiều gói ưu đãi hấp dẫn. Liên hệ để nhận báo giá tốt nhất.</p>
+                        </div>
+
+                        <!-- Pricing Table -->
+                        <div class="pricing-table">
+                            <div class="pricing-header">
+                                <div class="ph-item">Loại Dịch Vụ</div>
+                                <div class="ph-item">Thứ 2 - Thứ 6</div>
+                                <div class="ph-item">Thứ 7 - CN</div>
+                                <div class="ph-item">Lễ - Tết</div>
+                            </div>
+
+                            <div class="pricing-row">
+                                <div class="pr-item pr-label">
+                                    <strong>Green Fee (18 hố)</strong>
+                                    <span>Phí sân golf</span>
+                                </div>
+                                <div class="pr-item">2.200.000đ</div>
+                                <div class="pr-item">2.800.000đ</div>
+                                <div class="pr-item">3.500.000đ</div>
+                            </div>
+
+                            <div class="pricing-row">
+                                <div class="pr-item pr-label">
+                                    <strong>Caddy Fee</strong>
+                                    <span>Phí caddy</span>
+                                </div>
+                                <div class="pr-item">400.000đ</div>
+                                <div class="pr-item">400.000đ</div>
+                                <div class="pr-item">500.000đ</div>
+                            </div>
+
+                            <div class="pricing-row">
+                                <div class="pr-item pr-label">
+                                    <strong>Golf Cart</strong>
+                                    <span>Xe golf điện</span>
+                                </div>
+                                <div class="pr-item">600.000đ</div>
+                                <div class="pr-item">600.000đ</div>
+                                <div class="pr-item">700.000đ</div>
+                            </div>
+
+                            <div class="pricing-row highlight">
+                                <div class="pr-item pr-label">
+                                    <strong>Gói Trọn Gói</strong>
+                                    <span>Green Fee + Caddy + Cart</span>
+                                </div>
+                                <div class="pr-item">
+                                    <strong>2.900.000đ</strong>
+                                    <span class="save-badge">Tiết kiệm 300k</span>
+                                </div>
+                                <div class="pr-item">
+                                    <strong>3.500.000đ</strong>
+                                    <span class="save-badge">Tiết kiệm 300k</span>
+                                </div>
+                                <div class="pr-item">
+                                    <strong>4.300.000đ</strong>
+                                    <span class="save-badge">Tiết kiệm 400k</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional Services -->
+                        <div class="content-block" style="margin-top: 40px;">
+                            <h2 class="block-title">Dịch Vụ Bổ Sung</h2>
+                            <div class="additional-services">
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <i class="fa-solid fa-golf-ball-tee"></i>
+                                        <div>
+                                            <strong>Thuê Gậy Golf</strong>
+                                            <span>Bộ gậy Titleist/Callaway</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-price">800.000đ/bộ</div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <i class="fa-solid fa-shirt"></i>
+                                        <div>
+                                            <strong>Thuê Giày Golf</strong>
+                                            <span>Giày chuyên dụng các size</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-price">200.000đ/đôi</div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        <div>
+                                            <strong>Học Golf (Private)</strong>
+                                            <span>1 kèm 1 với HLV chuyên nghiệp</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-price">1.500.000đ/buổi</div>
+                                </div>
+
+                                <div class="service-item">
+                                    <div class="service-info">
+                                        <i class="fa-solid fa-users"></i>
+                                        <div>
+                                            <strong>Học Golf (Group)</strong>
+                                            <span>Nhóm 4-6 người</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-price">600.000đ/người</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Membership Packages -->
+                        <div class="content-block" style="margin-top: 40px;">
+                            <h2 class="block-title">Gói Thành Viên</h2>
+                            <div class="membership-cards">
+                                <div class="membership-card">
+                                    <div class="membership-badge">SILVER</div>
+                                    <h3>Thẻ Bạc</h3>
+                                    <div class="membership-price">
+                                        <span class="price">50.000.000đ</span>
+                                        <span class="period">/năm</span>
+                                    </div>
+                                    <ul class="membership-benefits">
+                                        <li><i class="fa-solid fa-check"></i> Giảm 20% Green Fee</li>
+                                        <li><i class="fa-solid fa-check"></i> Ưu tiên đặt sân</li>
+                                        <li><i class="fa-solid fa-check"></i> Miễn phí Driving Range</li>
+                                        <li><i class="fa-solid fa-check"></i> 2 Guest Pass/tháng</li>
+                                    </ul>
+                                    <button class="btn btn-outline btn-block">Tìm Hiểu Thêm</button>
+                                </div>
+
+                                <div class="membership-card featured">
+                                    <div class="membership-badge gold">GOLD</div>
+                                    <h3>Thẻ Vàng</h3>
+                                    <div class="membership-price">
+                                        <span class="price">120.000.000đ</span>
+                                        <span class="period">/năm</span>
+                                    </div>
+                                    <ul class="membership-benefits">
+                                        <li><i class="fa-solid fa-check"></i> Giảm 30% Green Fee</li>
+                                        <li><i class="fa-solid fa-check"></i> Ưu tiên đặt sân cao nhất</li>
+                                        <li><i class="fa-solid fa-check"></i> Miễn phí Caddy + Cart</li>
+                                        <li><i class="fa-solid fa-check"></i> 5 Guest Pass/tháng</li>
+                                        <li><i class="fa-solid fa-check"></i> Miễn phí F&B 10 triệu/năm</li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-block">Đăng Ký Ngay</button>
+                                </div>
+
+                                <div class="membership-card">
+                                    <div class="membership-badge platinum">PLATINUM</div>
+                                    <h3>Thẻ Bạch Kim</h3>
+                                    <div class="membership-price">
+                                        <span class="price">250.000.000đ</span>
+                                        <span class="period">/năm</span>
+                                    </div>
+                                    <ul class="membership-benefits">
+                                        <li><i class="fa-solid fa-check"></i> Unlimited Golf</li>
+                                        <li><i class="fa-solid fa-check"></i> Miễn phí toàn bộ dịch vụ</li>
+                                        <li><i class="fa-solid fa-check"></i> 10 Guest Pass/tháng</li>
+                                        <li><i class="fa-solid fa-check"></i> Private Locker</li>
+                                        <li><i class="fa-solid fa-check"></i> Ưu đãi đặc biệt F&B</li>
+                                    </ul>
+                                    <button class="btn btn-outline btn-block">Liên Hệ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab Content: Reviews -->
+                    <div class="tab-content" id="reviews">
+                        <div class="content-block">
+                            <div class="reviews-summary">
+                                <div class="rating-overview">
+                                    <div class="rating-score">
+                                        <span class="score">4.9</span>
+                                        <div class="stars">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="total-reviews">Dựa trên 248 đánh giá</span>
+                                    </div>
+                                </div>
+
+                                <div class="rating-breakdown">
+                                    <div class="rating-bar-item">
+                                        <span class="label">5 sao</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 85%"></div>
+                                        </div>
+                                        <span class="count">210</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="label">4 sao</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 10%"></div>
+                                        </div>
+                                        <span class="count">25</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="label">3 sao</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 3%"></div>
+                                        </div>
+                                        <span class="count">8</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="label">2 sao</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 1%"></div>
+                                        </div>
+                                        <span class="count">3</span>
+                                    </div>
+                                    <div class="rating-bar-item">
+                                        <span class="label">1 sao</span>
+                                        <div class="bar">
+                                            <div class="fill" style="width: 1%"></div>
+                                        </div>
+                                        <span class="count">2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Reviews List -->
+                        <div class="reviews-list">
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="avatar">NH</div>
+                                        <div>
+                                            <strong>Nguyễn Hoàng</strong>
+                                            <div class="review-stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">15/11/2023</span>
+                                </div>
+                                <p class="review-content">
+                                    Sân golf tuyệt vời nhất mà tôi từng chơi tại Việt Nam! Thiết kế của Greg Norman thực sự xuất sắc, mỗi hố đều mang lại thử thách riêng. View nhìn ra biển từ nhiều hố rất đẹp. Dịch vụ chuyên nghiệp, caddy nhiệt tình và am hiểu sân. Chắc chắn sẽ quay lại!
+                                </p>
+                                <div class="review-helpful">
+                                    <button class="helpful-btn"><i class="fa-regular fa-thumbs-up"></i> Hữu ích (24)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="avatar">TM</div>
+                                        <div>
+                                            <strong>Trần Minh</strong>
+                                            <div class="review-stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">10/11/2023</span>
+                                </div>
+                                <p class="review-content">
+                                    Sân được bảo dưỡng rất tốt, greens nhanh và đều. Bunker cát trắng đẹp mắt nhưng cũng khá khó. Nhà hàng ở clubhouse phục vụ món ăn ngon. Giá cả hợp lý so với chất lượng sân. Rất đáng để trải nghiệm!
+                                </p>
+                                <div class="review-helpful">
+                                    <button class="helpful-btn"><i class="fa-regular fa-thumbs-up"></i> Hữu ích (18)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="avatar">LH</div>
+                                        <div>
+                                            <strong>Lê Hương</strong>
+                                            <div class="review-stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">05/11/2023</span>
+                                </div>
+                                <p class="review-content">
+                                    Trải nghiệm tuyệt vời! Đây là lần đầu tiên tôi chơi golf ở sân links style và thực sự bị cuốn hút. Gió biển làm cho game trở nên thú vị hơn nhiều. Cảnh quan thiên nhiên hoang sơ, đẹp như tranh vẽ. Staff rất thân thiện và chuyên nghiệp.
+                                </p>
+                                <div class="review-helpful">
+                                    <button class="helpful-btn"><i class="fa-regular fa-thumbs-up"></i> Hữu ích (31)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="avatar">PD</div>
+                                        <div>
+                                            <strong>Phạm Dũng</strong>
+                                            <div class="review-stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">28/10/2023</span>
+                                </div>
+                                <p class="review-content">
+                                    Sân đẹp và thách thức, phù hợp cho golfer có handicap thấp. Một số hố khá khó với nhiều bunker và gió biển mạnh. Driving range tốt để warm up. Giá hơi cao vào cuối tuần nhưng xứng đáng với chất lượng.
+                                </p>
+                                <div class="review-helpful">
+                                    <button class="helpful-btn"><i class="fa-regular fa-thumbs-up"></i> Hữu ích (12)</button>
+                                </div>
+                            </div>
+
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="avatar">VT</div>
+                                        <div>
+                                            <strong>Vũ Thành</strong>
+                                            <div class="review-stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="review-date">20/10/2023</span>
+                                </div>
+                                <p class="review-content">
+                                    Một trong những sân golf đẹp nhất châu Á! Thiết kế độc đáo với nhiều elevation changes. Clubhouse sang trọng, phòng thay đồ sạch sẽ và hiện đại. Pro shop có đầy đủ trang thiết bị. Đặt sân qua website rất tiện lợi. Highly recommended!
+                                </p>
+                                <div class="review-helpful">
+                                    <button class="helpful-btn"><i class="fa-regular fa-thumbs-up"></i> Hữu ích (45)</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="load-more-reviews">
+                            <button class="btn btn-outline">Xem Thêm Đánh Giá</button>
                         </div>
                     </div>
                 </div>
@@ -205,6 +664,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+                
+                // Smooth scroll to content
+                document.querySelector('.course-tabs').scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'nearest' 
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

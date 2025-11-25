@@ -1422,3 +1422,615 @@ img {
         gap: 0;
     }
 }
+
+
+/* =========================================
+   Tab Content Styles
+   ========================================= */
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Course Info Grid */
+.course-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: var(--radius-sm);
+}
+
+.info-item i {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.info-item strong {
+    display: block;
+    color: var(--text-main);
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.info-item span {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+/* =========================================
+   Amenities Detailed Cards
+   ========================================= */
+
+.amenities-detailed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.amenity-card {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.amenity-card:hover {
+    background-color: white;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-3px);
+}
+
+.amenity-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.amenity-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.amenity-card p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.amenity-features {
+    list-style: none;
+    padding: 0;
+}
+
+.amenity-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.amenity-features li i {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+/* =========================================
+   Pricing Table
+   ========================================= */
+
+.pricing-table {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.pricing-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.ph-item {
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.ph-item:first-child {
+    text-align: left;
+}
+
+.pricing-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+}
+
+.pricing-row:hover {
+    background-color: #f8f9fa;
+}
+
+.pricing-row.highlight {
+    background-color: #e8f5e9;
+}
+
+.pricing-row.highlight:hover {
+    background-color: #d4edda;
+}
+
+.pr-item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--text-main);
+}
+
+.pr-label {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pr-label strong {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.pr-label span {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.save-badge {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Additional Services */
+.additional-services {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.2s;
+}
+
+.service-item:hover {
+    background-color: white;
+    box-shadow: var(--shadow-card);
+}
+
+.service-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.service-info i {
+    width: 45px;
+    height: 45px;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.service-info strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.service-info span {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.service-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* =========================================
+   Membership Cards
+   ========================================= */
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.membership-card {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.membership-card.featured {
+    border-color: #ffd700;
+    background: linear-gradient(to bottom, #fffef7, white);
+    position: relative;
+}
+
+.membership-card.featured::before {
+    content: 'PHỔ BIẾN NHẤT';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffd700;
+    color: #333;
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #c0c0c0;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.membership-badge.gold {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #333;
+}
+
+.membership-badge.platinum {
+    background: linear-gradient(135deg, #e5e4e2, #bcc6cc);
+    color: #333;
+}
+
+.membership-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.membership-price {
+    margin-bottom: 25px;
+}
+
+.membership-price .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.membership-price .period {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.membership-benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.membership-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--text-main);
+}
+
+.membership-benefits li i {
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+
+/* =========================================
+   Reviews Section
+   ========================================= */
+
+.reviews-summary {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: var(--radius-md);
+    margin-bottom: 30px;
+}
+
+.rating-overview {
+    text-align: center;
+}
+
+.rating-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-score .score {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.rating-score .stars {
+    color: #ffc107;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rating-score .total-reviews {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.rating-breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating-bar-item {
+    display: grid;
+    grid-template-columns: 60px 1fr 50px;
+    align-items: center;
+    gap: 15px;
+}
+
+.rating-bar-item .label {
+    font-size: 13px;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.rating-bar-item .bar {
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rating-bar-item .fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.rating-bar-item .count {
+    font-size: 13px;
+    color: var(--text-light);
+    text-align: right;
+}
+
+/* Reviews List */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.review-item {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: box-shadow 0.2s;
+}
+
+.review-item:hover {
+    box-shadow: var(--shadow-card);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.reviewer-info strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--text-main);
+}
+
+.review-stars {
+    color: #ffc107;
+    font-size: 14px;
+}
+
+.review-date {
+    font-size: 13px;
+    color: var(--text-light);
+}
+
+.review-content {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.review-helpful {
+    display: flex;
+    gap: 10px;
+}
+
+.helpful-btn {
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    padding: 8px 15px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.helpful-btn:hover {
+    background-color: #f8f9fa;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.load-more-reviews {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =========================================
+   Responsive Styles for New Components
+   ========================================= */
+
+@media (max-width: 1024px) {
+    .amenities-detailed {
+        grid-template-columns: 1fr;
+    }
+    
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .pricing-header,
+    .pricing-row {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .reviews-summary {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pricing-table {
+        overflow-x: auto;
+    }
+    
+    .pricing-header,
+    .pricing-row {
+        min-width: 600px;
+    }
+    
+    .course-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab-btn {
+        white-space: nowrap;
+    }
+}
+
