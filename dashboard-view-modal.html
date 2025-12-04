@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Xem Chi Tiết</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Quicksand', sans-serif; background: #f5f7fa;">
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 260px; background: #1e4d2b; color: white;">
+            <div style="padding: 30px 20px;">
+                <img src="https://www.figma.com/api/mcp/asset/37ea4486-9d5a-4be8-a955-f29640d08998" alt="GolFer" style="height: 40px; filter: brightness(0) invert(1);">
+            </div>
+        </div>
+        <div style="flex: 1; position: relative;">
+            <div style="padding: 30px 40px; filter: blur(3px); opacity: 0.5; pointer-events: none;">
+                <div style="background: white; padding: 25px; border-radius: 12px; height: 600px;"></div>
+            </div>
+            
+            <!-- Modal -->
+            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+                <div style="background: white; border-radius: 16px; width: 700px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                    <div style="padding: 25px 30px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                        <h2 style="margin: 0; font-size: 22px; color: #1e4d2b; font-weight: 700;">Chi Tiết Đặt Sân #DS001</h2>
+                        <a href="dashboard.html" style="font-size: 28px; color: #999; text-decoration: none; cursor: pointer; line-height: 1;">×</a>
+                    </div>
+                    
+                    <div style="padding: 30px;">
+                        <!-- Status Badge -->
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <span style="padding: 10px 24px; background: #e8f5e9; color: #4caf50; border-radius: 25px; font-size: 14px; font-weight: 600; display: inline-block;">✓ Đã Thanh Toán</span>
+                        </div>
+                        
+                        <!-- Customer Info Section -->
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                            <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1e4d2b; font-weight: 700;">Thông Tin Khách Hàng</h3>
+                            <div style="display: grid; grid-template-columns: 140px 1fr; gap: 12px; font-size: 14px;">
+                                <div style="color: #666; font-weight: 600;">Họ và tên:</div>
+                                <div style="color: #333; font-weight: 600;">Nguyễn Văn A</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Email:</div>
+                                <div style="color: #333;">nguyenvana@email.com</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Số điện thoại:</div>
+                                <div style="color: #333;">0905 507 622</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Booking Info Section -->
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                            <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1e4d2b; font-weight: 700;">Thông Tin Đặt Sân</h3>
+                            <div style="display: grid; grid-template-columns: 140px 1fr; gap: 12px; font-size: 14px;">
+                                <div style="color: #666; font-weight: 600;">Mã đặt sân:</div>
+                                <div style="color: #1e4d2b; font-weight: 700;">#DS001</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Ngày đặt:</div>
+                                <div style="color: #333;">04/12/2024</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Giờ chơi:</div>
+                                <div style="color: #333;">08:00 - 10:00 (2 giờ)</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Sân golf:</div>
+                                <div style="color: #333; font-weight: 600;">Sân A1</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Ngày tạo:</div>
+                                <div style="color: #333;">01/12/2024 14:30</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Info Section -->
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px;">
+                            <h3 style="margin: 0 0 15px 0; font-size: 16px; color: #1e4d2b; font-weight: 700;">Thông Tin Thanh Toán</h3>
+                            <div style="display: grid; grid-template-columns: 140px 1fr; gap: 12px; font-size: 14px;">
+                                <div style="color: #666; font-weight: 600;">Giá sân:</div>
+                                <div style="color: #333;">2,000,000đ</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Phí dịch vụ:</div>
+                                <div style="color: #333;">300,000đ</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Giảm giá:</div>
+                                <div style="color: #f44336;">-200,000đ</div>
+                                
+                                <div style="color: #666; font-weight: 600;">Phương thức:</div>
+                                <div style="color: #333;">Chuyển khoản ngân hàng</div>
+                                
+                                <div style="border-top: 2px solid #ddd; padding-top: 12px; margin-top: 8px; color: #1e4d2b; font-weight: 700; font-size: 16px;">Tổng cộng:</div>
+                                <div style="border-top: 2px solid #ddd; padding-top: 12px; margin-top: 8px; color: #1e4d2b; font-weight: 700; font-size: 18px;">2,500,000đ</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Notes Section -->
+                        <div style="background: #fff3e0; padding: 15px; border-radius: 12px; border-left: 4px solid #ff9800;">
+                            <div style="font-weight: 600; color: #ff9800; margin-bottom: 5px; font-size: 13px;">📝 Ghi Chú:</div>
+                            <div style="color: #666; font-size: 14px; line-height: 1.6;">Khách hàng yêu cầu sân có view đẹp. Đã xác nhận qua điện thoại.</div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 20px 30px; border-top: 1px solid #f0f0f0; display: flex; gap: 10px; justify-content: flex-end;">
+                        <a href="dashboard.html" style="padding: 12px 24px; background: white; color: #666; border: 1px solid #ddd; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Đóng</a>
+                        <a href="dashboard-edit-modal.html" style="padding: 12px 24px; background: #1e4d2b; color: white; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Chỉnh Sửa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
