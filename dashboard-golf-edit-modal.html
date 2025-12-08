@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Chỉnh Sửa Sân Golf</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Quicksand', sans-serif; background: #f5f7fa;">
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 260px; background: #1e4d2b; color: white;">
+            <div style="padding: 30px 20px;">
+                <img src="https://www.figma.com/api/mcp/asset/37ea4486-9d5a-4be8-a955-f29640d08998" alt="GolFer" style="height: 40px; filter: brightness(0) invert(1);">
+            </div>
+        </div>
+        <div style="flex: 1; position: relative;">
+            <div style="padding: 30px 40px; filter: blur(3px); opacity: 0.5; pointer-events: none;">
+                <div style="background: white; padding: 25px; border-radius: 12px; height: 600px;"></div>
+            </div>
+            
+            <!-- Modal -->
+            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+                <div style="background: white; border-radius: 16px; width: 700px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                    <div style="padding: 25px 30px; border-bottom: 1px solid #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
+                        <h2 style="margin: 0; font-size: 22px; color: #1e4d2b; font-weight: 700;">Chỉnh Sửa Sân Golf</h2>
+                        <a href="dashboard-golf-courses.html" style="font-size: 28px; color: #999; text-decoration: none; cursor: pointer; line-height: 1;">×</a>
+                    </div>
+                    
+                    <div style="padding: 30px;">
+                        <!-- Current Image Preview -->
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Hình Ảnh Hiện Tại</label>
+                            <img src="https://www.figma.com/api/mcp/asset/0b84f7a2-9434-4cf0-ad8a-4f11077576dc" alt="Current" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd;">
+                        </div>
+                        
+                        <form>
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Tên Sân Golf *</label>
+                                <input type="text" value="Sân Golf A1" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; box-sizing: border-box;">
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                                <div>
+                                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Loại Sân *</label>
+                                    <select style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; cursor: pointer; box-sizing: border-box;">
+                                        <option selected>Premium</option>
+                                        <option>Standard</option>
+                                        <option>VIP</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Số Lỗ *</label>
+                                    <select style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; cursor: pointer; box-sizing: border-box;">
+                                        <option>9 Holes</option>
+                                        <option selected>18 Holes</option>
+                                        <option>27 Holes</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Địa Điểm *</label>
+                                <input type="text" value="Đà Nẵng Golf Club" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; box-sizing: border-box;">
+                            </div>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                                <div>
+                                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Giá/Giờ *</label>
+                                    <input type="number" value="1000000" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; box-sizing: border-box;">
+                                </div>
+                                <div>
+                                    <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Par *</label>
+                                    <input type="number" value="72" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; box-sizing: border-box;">
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Tiện Ích</label>
+                                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+                                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 16px; height: 16px; cursor: pointer;">
+                                        <span style="font-size: 14px;">Clubhouse</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 16px; height: 16px; cursor: pointer;">
+                                        <span style="font-size: 14px;">Restaurant</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 16px; height: 16px; cursor: pointer;">
+                                        <span style="font-size: 14px;">Pro Shop</span>
+                                    </label>
+                                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                                        <input type="checkbox" checked style="width: 16px; height: 16px; cursor: pointer;">
+                                        <span style="font-size: 14px;">Driving Range</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Thay Đổi Hình Ảnh</label>
+                                <input type="file" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; box-sizing: border-box;">
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Mô Tả</label>
+                                <textarea rows="4" style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; resize: vertical; box-sizing: border-box;">Sân golf đẳng cấp quốc tế với thiết kế hiện đại, cảnh quan tuyệt đẹp và dịch vụ chuyên nghiệp.</textarea>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <label style="display: block; font-weight: 600; color: #333; margin-bottom: 8px; font-size: 14px;">Trạng Thái *</label>
+                                <select style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Quicksand', sans-serif; font-size: 14px; outline: none; cursor: pointer; box-sizing: border-box;">
+                                    <option selected>Đang hoạt động</option>
+                                    <option>Tạm ngưng</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div style="padding: 20px 30px; border-top: 1px solid #f0f0f0; display: flex; gap: 10px; justify-content: space-between;">
+                        <a href="dashboard-golf-delete-modal.html" style="padding: 12px 24px; background: #f44336; color: white; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">🗑️ Xóa Sân</a>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="dashboard-golf-courses.html" style="padding: 12px 24px; background: white; color: #666; border: 1px solid #ddd; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Hủy</a>
+                            <a href="dashboard-golf-courses.html" style="padding: 12px 24px; background: #1e4d2b; color: white; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Lưu Thay Đổi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

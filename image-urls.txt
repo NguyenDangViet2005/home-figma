@@ -1,0 +1,53 @@
+# UNSPLASH IMAGE URLs FOR GOLF COURSE PROJECT
+# Thay thế các URL Figma bằng các URL Unsplash này
+
+## Golf Course Images (Hình ảnh sân golf)
+Golf Course 1 (Main): https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1200&q=80
+Golf Course 2: https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1200&q=80
+Golf Course 3: https://images.unsplash.com/photo-1592919505780-303950717480?w=1200&q=80
+Golf Course 4: https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?w=1200&q=80
+Golf Course 5: https://images.unsplash.com/photo-1593111774240-d529f12a6c1a?w=1200&q=80
+Golf Course 6: https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1200&q=80
+
+## Golf Player Images (Hình ảnh người chơi golf)
+Golfer 1: https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&q=80
+Golfer 2: https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=800&q=80
+
+## Logo/Brand Images
+Logo Placeholder: https://via.placeholder.com/200x50/1e4d2b/ffffff?text=GolFer
+
+## Background Images
+Hero Background: https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1920&q=80
+
+## Mapping cũ -> mới
+Thay thế trong các file:
+
+OLD: https://www.figma.com/api/mcp/asset/0b84f7a2-9434-4cf0-ad8a-4f11077576dc
+NEW: https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1200&q=80
+
+OLD: https://www.figma.com/api/mcp/asset/64cc160c-250d-4eeb-b593-fe358880e7ff
+NEW: https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?w=1200&q=80
+
+OLD: https://www.figma.com/api/mcp/asset/47c8d9b9-8b23-4ba7-bac0-2011952564f3
+NEW: https://images.unsplash.com/photo-1592919505780-303950717480?w=1200&q=80
+
+OLD: https://www.figma.com/api/mcp/asset/837d8161-5a25-447a-97d0-12fca4f22ccb
+NEW: https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?w=1200&q=80
+
+OLD: https://www.figma.com/api/mcp/asset/7693a9f4-f8f3-4d62-b952-5766f4aa6be1
+NEW: https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=1920&q=80
+
+OLD: https://www.figma.com/api/mcp/asset/37ea4486-9d5a-4be8-a955-f29640d08998
+NEW: https://via.placeholder.com/200x50/1e4d2b/ffffff?text=GolFer
+
+## Các file cần cập nhật:
+- booking-success.html
+- my-bookings.html
+- dashboard-golf-courses.html
+- dashboard-golf-add-modal.html
+- dashboard-golf-view-modal.html
+- dashboard-golf-edit-modal.html
+- dashboard-golf-delete-modal.html
+- login.html
+- forgot-password.html (và các variant)
+- index.html
