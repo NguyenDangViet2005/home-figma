@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Xuất Excel Thành Công</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Quicksand', sans-serif; background: #f5f7fa;">
+    <div style="display: flex; height: 100vh;">
+        <div style="width: 260px; background: #1e4d2b; color: white;">
+            <div style="padding: 30px 20px;">
+                <img src="https://via.placeholder.com/200x50/ffffff/1e4d2b?text=GolFer" alt="GolFer" style="height: 40px;">
+            </div>
+        </div>
+        <div style="flex: 1; position: relative;">
+            <div style="padding: 30px 40px; filter: blur(3px); opacity: 0.5; pointer-events: none;">
+                <div style="background: white; padding: 25px; border-radius: 12px; height: 600px;"></div>
+            </div>
+            
+            <!-- Modal -->
+            <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000;">
+                <div style="background: white; border-radius: 16px; width: 500px; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                    <div style="padding: 40px 30px; text-align: center;">
+                        <!-- Success Icon -->
+                        <div style="margin-bottom: 25px;">
+                            <div style="width: 100px; height: 100px; background: #e8f5e9; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25" cy="25" r="25" fill="#4caf50"/>
+                                    <path d="M15 25L22 32L35 19" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <h2 style="margin: 0 0 15px 0; font-size: 26px; color: #1e4d2b; font-weight: 700;">Xuất Excel Thành Công!</h2>
+                        <p style="margin: 0 0 25px 0; font-size: 15px; color: #666; line-height: 1.6;">File đã được tải xuống thành công vào máy tính của bạn.</p>
+                        
+                        <!-- File Info -->
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px; text-align: left;">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <div style="width: 50px; height: 50px; background: #1e4d2b; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="6" y="4" width="16" height="20" rx="2" stroke="white" stroke-width="2"/>
+                                        <line x1="10" y1="10" x2="18" y2="10" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="10" y1="14" x2="18" y2="14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        <line x1="10" y1="18" x2="15" y2="18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                </div>
+                                <div style="flex: 1;">
+                                    <div style="font-weight: 700; color: #1e4d2b; font-size: 15px; margin-bottom: 5px;">Doanh_Thu_Dat_San_2024.xlsx</div>
+                                    <div style="font-size: 13px; color: #666;">Kích thước: 245 KB • 50 bản ghi</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Info Box -->
+                        <div style="background: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 4px solid #2196f3; margin-bottom: 25px; text-align: left;">
+                            <div style="font-size: 13px; color: #666; line-height: 1.6;">
+                                <strong style="color: #2196f3;">💡 Lưu ý:</strong><br>
+                                File đã được lưu vào thư mục Downloads của bạn. Bạn có thể mở file bằng Microsoft Excel hoặc Google Sheets.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 20px 30px; border-top: 1px solid #f0f0f0; display: flex; gap: 10px; justify-content: center;">
+                        <a href="dashboard.html" style="padding: 12px 30px; background: #1e4d2b; color: white; border: none; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Đóng</a>
+                        <a href="dashboard-export-modal.html" style="padding: 12px 30px; background: white; color: #1e4d2b; border: 2px solid #1e4d2b; border-radius: 8px; font-weight: 600; text-decoration: none; display: inline-block;">Xuất Lại</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
